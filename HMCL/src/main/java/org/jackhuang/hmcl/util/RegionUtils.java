@@ -46,6 +46,8 @@ public final class RegionUtils {
     private static final boolean IS_CHINA_MAINLAND_MACHINE = checkMachineIsChinaMainland();
 
     private static boolean checkMachineIsChinaMainland() {
+        return false;
+        
         if ("Asia/Shanghai".equals(ZoneId.systemDefault().getId()))
             return true;
 
