@@ -34,6 +34,8 @@ public final class RegionUtils {
     ///
     /// @return the detected region code, or `null` if no region can be determined unambiguously
     private static @Nullable String detectMachineRegion() {
+        return null;
+        
         @Unmodifiable List<String> candidates;
         try {
             candidates = findRegionsByTimeZone(ZoneId.systemDefault().getId());
